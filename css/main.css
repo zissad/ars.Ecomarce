@@ -1,0 +1,199 @@
+/* All include file */
+@import "./includes/_globalStyles.css";
+@import "./includes/_variable.css";
+/* All include file */
+
+:root {
+    /* color */
+    --primaryColor : #36B37E;
+    --secondaryColor: #183B56;
+
+    /* Text color */
+    --primaryextColor: #5A7182;
+    --secondaryTextColor: #B3BAC5;
+
+    /* Font family */
+    --primatyFont: 'Work Sans', sans-serif;
+
+    /* transition */
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+li {
+    list-style: none;
+}
+h1 {
+    color: var(--secondaryColor);
+}
+p {
+    color: var(--secondaryTextColor);
+}
+input, button {
+    font-family: var(--primatyFont);
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primaryColor);
+}
+
+
+body {
+    font-family: var(--primatyFont);
+}
+/* navigation style */
+nav {
+    height: 70px;
+    background: #F7F8F9;
+}
+.nav-container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-container ul {
+    display: flex;
+    align-items: center;
+}
+nav .nav-container ul li {
+    margin-right: 30px;
+    font-size: 18px;
+}
+nav .nav-container ul li:last-child {
+    margin-right: 0px;
+}
+nav .nav-container ul li.active a {
+    color: var(--primaryColor);
+    pointer-events: none;
+}
+nav .nav-container ul li a {
+    display: block;
+    transition: var(--transition);
+}
+nav .nav-container ul li a:hover {
+    color: var(--primaryColor);
+    transform: translateY(-3px);
+}
+nav .nav-container ul .cta-btn a {
+    height: 40px;
+    width: 130px;
+    border: 2px solid var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--primaryColor);
+}
+nav .nav-container ul .cta-btn a:hover {
+    background: var(--primaryColor);
+    color: #fff;
+    transform: translateY(0px);
+}
+
+
+/* Hero section */
+
+.hero {
+    height: 80vh;
+    background: #F7F8F9;
+}
+.hero .hero-container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero .hero-container .hero-left h1 {
+    font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 30px;
+}
+.hero .hero-container .hero-left .asus-features-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+    margin-left: ;
+}
+.hero .hero-container .hero-left .asus-features-item .asus-featur {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-container .hero-left .asus-features-item .asus-featur .circle {
+    display: flex;
+    margin-right: 5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: var(--primaryColor);
+}
+.hero .hero-container .hero-left .pre-order-from {
+    width: 120%;
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(204, 204, 204, 0.1);
+}
+.hero .hero-container .hero-left .pre-order-from input {
+    width: 65%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.hero .hero-container .hero-left .pre-order-from input::placeholder {
+    color: var(--secondaryTextColor);
+}
+.hero .hero-container .hero-left .pre-order-from button {
+    width: 30%;
+    height: 40px;
+    background: var(--primaryColor);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero .hero-container .hero-left .pre-order-from button:hover {
+    background: #2e966a;
+}
+.hero .hero-container img {
+    width: 510px;
+    height: auto;
+}
+/* Hero section */
+
+
+
+
+.products-section{
+    height: 1000vh;
+}
+.products-section .heading-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.products-section .heading-1 h1 {
+    font-size: 40px;
+}
+.products-section .heading-1 p {
+    margin-top: 10px;
+    color: var(--secondaryTextColor);
+}
